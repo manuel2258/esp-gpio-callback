@@ -5,7 +5,8 @@ Originally developed for my own projects but it might be useful for others as we
   
 ## Requirements  
   
-To need to use the ESP-IDF and a compatible board. Personally I tested it with an ESP-WROOM 32 Development board.
+To need to use the ESP-IDF and a compatible board. Personally I tested it with an ESP-WROOM 32 Development board.  
+Also your project has to be written in C++, not C.
 
 ## How to use
 
@@ -22,6 +23,10 @@ builder
 This will print out "Button14: Pressed" when pressed.  
 There are multiple Inputs available just as the interface IInput which lets your create your own customs Input Devices.
 Everything class is in the gpio_cb namespace.  
+
+### Notes
+  
+New InputManager should always be created on the stack. Calling its ctor will set its InputManager::instance to the newly created instance. You can delete InputManager::instance to unhook and delets the inputs, if there are set to be owned (look at the IInput interface). Therefor if the Input is owned by Manager it should as well be created on the stack.
 
 ## Include in your own projects
 
