@@ -1,4 +1,4 @@
-#include "input_types.h"
+#include "gpio_cb/input_types.h"
 
 #include "esp_log.h"
 #include "esp_timer.h"
