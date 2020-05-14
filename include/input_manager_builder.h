@@ -6,7 +6,7 @@
 #include "input_manager.h"
 #include "input_types.h"
 
-namespace input {
+namespace gpio_cb {
 
 class InputManagerBuilder {
 private:
@@ -21,6 +21,6 @@ public:
 
   InputManagerBuilder &add_input(IInput *input);
 };
-} // namespace input
+} // namespace gpio_cb
 
 #endif // GPIOCALLBACKMANAGERBUILDER_H

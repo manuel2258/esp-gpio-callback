@@ -3,7 +3,7 @@
 #include "esp_log.h"
 #include "esp_timer.h"
 
-namespace input {
+namespace gpio_cb {
 
 RawButtonInput::RawButtonInput(uint64_t pin, bool pullup,
                                std::function<void()> callback)
@@ -31,4 +31,4 @@ void BlockedButtonInput::invoke_callback(uint64_t pin) {
   }
 }
 
-} // namespace input
+} // namespace gpio_cb

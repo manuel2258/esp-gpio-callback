@@ -1,6 +1,6 @@
 #include "input_manager_builder.h"
 
-namespace input {
+namespace gpio_cb {
 
 InputManagerBuilder::InputManagerBuilder(uint32_t stack_size)
     : stack_size(stack_size) {
@@ -24,4 +24,4 @@ InputManagerBuilder::~InputManagerBuilder() {
   }
 }
 
-} // namespace input
+} // namespace gpio_cb

@@ -12,7 +12,7 @@
 
 #include "input_types.h"
 
-namespace input {
+namespace gpio_cb {
 
 /**
  * @brief Manages Inputs and theirs IRS Routine.
@@ -54,6 +54,6 @@ public:
    */
   void input_task();
 };
-} // namespace input
+} // namespace gpio_cb
 
 #endif // GPIOCALLBACKMANAGER_H

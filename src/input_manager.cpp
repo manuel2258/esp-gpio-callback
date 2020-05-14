@@ -2,7 +2,7 @@
 
 #include "esp_log.h"
 
-namespace input {
+namespace gpio_cb {
 
 InputManager *InputManager::instance;
 
@@ -87,4 +87,4 @@ void InputManager::apply_to_inputs(std::function<void(uint64_t)> func) {
   }
 }
 
-} // namespace input
+} // namespace gpio_cb

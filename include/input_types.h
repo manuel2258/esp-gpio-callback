@@ -6,7 +6,7 @@
 
 #include "driver/gpio.h"
 
-namespace input {
+namespace gpio_cb {
 
 /**
  * @brief Base Interface for all Inputs.
@@ -106,6 +106,6 @@ public:
   void invoke_callback(uint64_t pin) override;
 };
 
-} // namespace input
+} // namespace gpio_cb
 
 #endif // IINPUT_H
